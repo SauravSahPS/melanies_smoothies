@@ -14,8 +14,9 @@ st.write(
 name_order = st.text_input('Name on Smoothie:')
 st.write('The name on the Smoothie  will be : ', name_order )
 
-smoothieFrooth_response = request.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothieFrooth_response)
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
+
 
 cnx = st.connection("snowflake")
 session = cnx.session()
