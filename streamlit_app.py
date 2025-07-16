@@ -15,7 +15,7 @@ name_order = st.text_input('Name on Smoothie:')
 st.write('The name on the Smoothie  will be : ', name_order )
 
 smoothiefroot_response = requests.get("https://FRUITYVICE.com/api/fruit/watermelon")
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())
 
 
 cnx = st.connection("snowflake")
