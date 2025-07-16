@@ -16,7 +16,7 @@ st.write('The name on the Smoothie  will be : ', name_order )
 
 smoothiefroot_response = requests.get("https://FRUITYVICE.com/api/fruit/watermelon")
 # st.text(smoothiefroot_response.json())
-sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True
+sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
 cnx = st.connection("snowflake")
 session = cnx.session()
